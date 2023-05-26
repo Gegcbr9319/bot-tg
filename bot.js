@@ -1,8 +1,13 @@
 const { Bot } = require("grammy");
 const {fetch} = require("node-fetch");
+const express = require('express');
+const cors = require('cors');
 
 const bot = new Bot("5468995099:AAH32Ro8CWe8w3B8KNcfgw_BL2Su4_J8E84");
+const app = express();
 
+app.use(express.json());
+app.use(cors());
 
 const API_CAT = `https://api.thecatapi.com/v1/images/search?api_key=72e15643-0434-4c8d-bd67-a90a9489f0df`;  // получаем ключи
 const API_FOX = `https://randomfox.ca/floof/`;
@@ -96,3 +101,7 @@ bot.on('callback_query', async (query) => {
         });
     }
   });
+
+  const PORT = 80;
+
+app.listen(PORT, () => console.log('server started on PORT ' + PORT))
