@@ -3,7 +3,7 @@ const {fetch} = require("node-fetch");
 const express = require('express');
 const cors = require('cors');
 
-const bot = new Bot("5468995099:AAH32Ro8CWe8w3B8KNcfgw_BL2Su4_J8E84");
+const bot = new Bot("5468995099:AAH32Ro8CWe8w3B8KNcfgw_BL2Su4_J8E84",{polling: true});
 const app = express();
 
 app.use(express.json());
