@@ -3,7 +3,6 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "type": "module",
     "grammy": "^1.16.1"
   }
 }
