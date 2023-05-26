@@ -1,4 +1,4 @@
-import { Bot } from "grammy";
+const { Bot } = require("grammy");
 import fetch from "node-fetch";
 
 const bot = new Bot("5468995099:AAH32Ro8CWe8w3B8KNcfgw_BL2Su4_J8E84");
