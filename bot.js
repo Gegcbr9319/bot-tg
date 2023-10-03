@@ -104,4 +104,6 @@ bot.on('callback_query', async (query) => {
 
   const PORT = 80;
 
-app.listen(PORT, () => console.log('server started on PORT ' + PORT))
+app.listen(PORT, () => console.log('server started on PORT ' + PORT));
+
+bot.start();
