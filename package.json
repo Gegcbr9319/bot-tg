@@ -1,10 +1,11 @@
 {
-  "scripts": {
-    "start": "node bot.js"
-  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "grammy": "^1.16.1"
+    "grammy": "^1.19.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "npx tsc",
+    "start": "npx tsc && node bot.js "
   }
 }
