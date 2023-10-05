@@ -1,4 +1,5 @@
 import { Bot, Context, InlineKeyboard } from "grammy";
+import fetch from "node-fetch";
 
 const token = "5468995099:AAH2MBvVmXBvieEk6t7q8gy9BAmH-I_mtH0";
 
