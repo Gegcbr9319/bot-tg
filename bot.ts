@@ -1,5 +1,5 @@
 import { Bot, Context, InlineKeyboard } from "grammy";
-import fetch from "node-fetch";
+import fetch from "cross-fetch";
 
 const token = "5468995099:AAH2MBvVmXBvieEk6t7q8gy9BAmH-I_mtH0";
 
@@ -41,6 +41,7 @@ const start = () => {
   const getData = async (url: string) => {
     const res = await fetch(url);
     let respData = await res.json();
+    //console.log(respData);
 
     if (Array.isArray(respData)) {
       respData = respData[0];
